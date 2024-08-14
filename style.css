@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-family: "Norse-Bold.otf";
     font-size: 40px;
@@ -59,4 +59,99 @@ body {
 
 .main {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+}
+
+header {
+    font-size: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 70px;
+    padding-right: 250px;
+    padding-bottom: 40px;
+}
+
+form {
+    flex: 1;
+    background-color: white;
+    padding-left: 70px;
+    padding-bottom: 70px
+}
+
+.form-header {
+    color: rgb(43, 43, 43);
+}
+
+.form-container {
+    display: flex;
+    gap: 100px;
+}
+
+.form-container > div,
+.form-container > div > div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-container > div {
+    gap: 30px;
+    font-size: 20px;
+    color: rgba(29, 29, 29, 0.764);
+}
+
+input {
+    background-color: rgb(251, 251, 251);
+    border: 3px solid #E5E7EB;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border: 3px solid blue;
+    outline: none;
+    border-radius: inherit;
+}
+
+input[type=password]:invalid {
+    border: 3px solid red;
+    border-radius: inherit;
+}
+
+input[type=password]:invalid + span::after {
+    content: "*Passwords do not match";
+    color: red;
+}
+
+.footer {
+    margin-top: 40px;
+    background-color: rgb(243, 243, 243);
+    flex: 1;
+    padding-left: 70px;
+}
+
+.create-account {
+    padding: 15px 50px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-text {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.log-in {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
 }
